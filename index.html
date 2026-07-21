@@ -1,11 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Homepage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal academic introduction site for Shixue Sun, PhD, Computational Translational Scientist.">
+  <title>Shixue Sun, PhD | Computational Translational Scientist</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My GitHub Homepage!</h1>
-    <p>This page is hosted completely free using GitHub Pages.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="nav__brand" href="#top" aria-label="Shixue Sun homepage">
+        <span class="nav__mark">SS</span>
+        <span>Shixue Sun</span>
+      </a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <ul class="nav__links" id="primary-nav"></ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="top" aria-labelledby="hero-title">
+      <div class="section__inner hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow" id="hero-kicker"></p>
+          <h1 id="hero-title"></h1>
+          <p class="hero__subtitle" id="hero-subtitle"></p>
+          <p class="hero__meta" id="hero-meta"></p>
+          <div class="link-row" id="hero-links" aria-label="Profile links"></div>
+        </div>
+        <aside class="hero__summary" aria-label="Research identity summary">
+          <div class="summary-card">
+            <span class="summary-card__label">Research Focus</span>
+            <p id="hero-focus"></p>
+          </div>
+          <div class="summary-card summary-card--accent">
+            <span class="summary-card__label">Current Direction</span>
+            <p id="hero-direction"></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="profile" aria-labelledby="profile-title">
+      <div class="section__inner section__narrow reveal">
+        <p class="section-kicker">Scientific Profile</p>
+        <h2 id="profile-title">Scientific Profile</h2>
+        <p class="lead" id="profile-text"></p>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="program" aria-labelledby="program-title">
+      <div class="section__inner reveal">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Research Program</p>
+            <h2 id="program-title">Four Pillars</h2>
+          </div>
+          <p class="section-heading__note">Reusable systems for discovery, evidence, and validation.</p>
+        </div>
+        <div class="pillar-grid" id="program-pillars"></div>
+      </div>
+    </section>
+
+    <section class="section portfolio-section" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="section__inner reveal">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Research Portfolio</p>
+            <h2 id="portfolio-title">Major Contributions</h2>
+          </div>
+          <p class="section-heading__note">A compact view of the work shaping the scientific program.</p>
+        </div>
+        <div class="portfolio-grid" id="portfolio-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="outputs" aria-labelledby="outputs-title">
+      <div class="section__inner reveal">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Selected Outputs</p>
+            <h2 id="outputs-title">Representative Work</h2>
+          </div>
+          <p class="section-heading__note">Selected outputs only, not a full publication list.</p>
+        </div>
+        <ul class="output-list" id="outputs-list"></ul>
+      </div>
+    </section>
+
+    <section class="section funding-section" id="funding" aria-labelledby="funding-title">
+      <div class="section__inner reveal">
+        <div class="funding-card">
+          <div>
+            <p class="section-kicker">Current Funding</p>
+            <h2 id="funding-title"></h2>
+          </div>
+          <div class="funding-card__body">
+            <p class="funding-card__award" id="funding-award"></p>
+            <p id="funding-description"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="infrastructure" aria-labelledby="infrastructure-title">
+      <div class="section__inner reveal">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Research Infrastructure / Open Science</p>
+            <h2 id="infrastructure-title">Open Resources</h2>
+          </div>
+          <p class="section-heading__note">Compact, reusable tools and knowledge resources.</p>
+        </div>
+        <div class="resource-grid" id="resource-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section__inner footer__inner">
+      <p id="footer-statement"></p>
+      <div class="link-row link-row--footer" id="footer-links" aria-label="Footer contact links"></div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">&uarr;</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
