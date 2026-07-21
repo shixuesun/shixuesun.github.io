@@ -43,7 +43,7 @@ const siteData = {
       description: "Connecting computational predictions with experimental systems and clinical evidence."
     }
   ],
-  researchPortfolio: [
+  portfolio: [
     {
       tag: "Knowledge Infrastructure",
       title: "RD-OMICS",
@@ -229,7 +229,7 @@ const renderPillars = () => {
 
 const renderPortfolio = () => {
   const container = select("#portfolio-grid");
-  const portfolioItems = getDataArray("researchPortfolio", "portfolio");
+  const portfolioItems = getDataArray("portfolio");
 
   portfolioItems.forEach((item) => {
     const article = document.createElement("article");
