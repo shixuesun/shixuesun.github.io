@@ -3,12 +3,12 @@ const siteData = {
     name: "Shixue Sun, PhD, MS",
     title: "Computational Translational Scientist",
     subtitle: "Developing computational systems that accelerate therapeutic discovery",
-    affiliationLine: "United States | Computational therapeutics, translational informatics, and reproducible biomedical research",
+    affiliationLine: "Computational therapeutics, translational informatics, and reproducible biomedical research",
     focus: "Biomedical data integration, computational intelligence, and translational validation for therapeutic discovery.",
     direction: "Building reusable discovery infrastructure that connects open knowledge resources, molecular profiles, and clinical evidence."
   },
   links: [
-    { label: "Email", url: "mailto:REPLACE_WITH_EMAIL" },
+    { label: "Email", url: "mailto:shixuesun.research@gmail.com" },
     { label: "Google Scholar", url: "https://scholar.google.com/citations?user=SlqCLiUAAAAJ" },
     { label: "ORCID", url: "https://orcid.org/my-orcid?orcid=0000-0002-0929-977X" },
     { label: "GitHub", url: "https://github.com/shixuesun" },
@@ -62,7 +62,7 @@ const siteData = {
       focus: "A computational platform for identifying therapeutic candidates through reversal of disease-associated gene expression signatures.",
       outputs: [
         "Reversal Gene Expression Assessment (JTM)",
-        "Resuable drug repurposing platform (in development)",
+        "Reusable drug repurposing platform (in development)",
         "Multiple public perturbation resources"
       ]
     },
@@ -140,14 +140,31 @@ const siteData = {
 
 const select = (selector) => document.querySelector(selector);
 
+const getDataArray = (primaryKey, fallbackKey) => {
+  const value = siteData[primaryKey] || (fallbackKey ? siteData[fallbackKey] : undefined) || [];
+
+  if (!Array.isArray(value)) {
+    console.warn(`Expected siteData.${primaryKey} to be an array.`);
+    return [];
+  }
+
+  return value;
+};
+
 const createLink = ({ label, url }) => {
   const link = document.createElement("a");
+  const rawUrl = String(url || "#").trim();
+  const normalizedUrl =
+    label.toLowerCase() === "email" && rawUrl !== "#" && !rawUrl.startsWith("mailto:")
+      ? `mailto:${rawUrl}`
+      : rawUrl;
+
   link.className = "link-pill";
-  link.href = url;
+  link.href = normalizedUrl;
   link.textContent = label;
   link.rel = "noreferrer";
 
-  if (!url.startsWith("mailto:")) {
+  if (normalizedUrl !== "#" && !normalizedUrl.startsWith("mailto:")) {
     link.target = "_blank";
   }
 
@@ -157,7 +174,7 @@ const createLink = ({ label, url }) => {
 const renderNavigation = () => {
   const navLinks = select("#primary-nav");
 
-  siteData.navigation.forEach(({ label, target }) => {
+  getDataArray("navigation").forEach(({ label, target }) => {
     const item = document.createElement("li");
     const link = document.createElement("a");
     link.href = `#${target}`;
@@ -178,7 +195,7 @@ const renderHero = () => {
   const heroLinks = select("#hero-links");
   const footerLinks = select("#footer-links");
 
-  siteData.links.forEach((link) => {
+  getDataArray("links").forEach((link) => {
     heroLinks.append(createLink(link));
     footerLinks.append(createLink(link));
   });
@@ -191,7 +208,7 @@ const renderProfile = () => {
 const renderPillars = () => {
   const container = select("#program-pillars");
 
-  siteData.pillars.forEach((pillar, index) => {
+  getDataArray("pillars").forEach((pillar, index) => {
     const article = document.createElement("article");
     article.className = "pillar-card";
 
@@ -212,8 +229,9 @@ const renderPillars = () => {
 
 const renderPortfolio = () => {
   const container = select("#portfolio-grid");
+  const portfolioItems = getDataArray("researchPortfolio", "portfolio");
 
-  siteData.portfolio.forEach((item) => {
+  portfolioItems.forEach((item) => {
     const article = document.createElement("article");
     article.className = "portfolio-card";
 
@@ -247,7 +265,9 @@ const renderPortfolio = () => {
     const outputs = document.createElement("ul");
     outputs.className = "compact-list";
 
-    item.outputs.forEach((output) => {
+    const outputsList = Array.isArray(item.outputs) ? item.outputs : [];
+
+    outputsList.forEach((output) => {
       const listItem = document.createElement("li");
       listItem.textContent = output;
       outputs.append(listItem);
@@ -261,7 +281,7 @@ const renderPortfolio = () => {
 const renderOutputs = () => {
   const list = select("#outputs-list");
 
-  siteData.outputs.forEach((output) => {
+  getDataArray("outputs").forEach((output) => {
     const item = document.createElement("li");
     const label = document.createElement("strong");
     const text = document.createElement("span");
@@ -283,7 +303,7 @@ const renderFunding = () => {
 const renderResources = () => {
   const container = select("#resource-grid");
 
-  siteData.resources.forEach((resource) => {
+  getDataArray("resources").forEach((resource) => {
     const article = document.createElement("article");
     article.className = "resource-card";
 
