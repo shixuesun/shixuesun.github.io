@@ -4,8 +4,8 @@ const siteData = {
     title: "Computational Translational Scientist",
     subtitle: "Integrating Multimodal Biomedical Evidence to Advance Biomarker and Therapeutic Discovery",
     affiliationLine: "NCATS/NIH",
-    focus: "Cross-disciplinary scientific reasoning across pharmacology, biomedical science, bioinformatics, multi-omics, clinical informatics, and therapeutic discovery.",
-    direction: "Integrating molecular, experimental, clinical, pharmacological, and knowledge-based evidence to develop testable translational hypotheses."
+    focus: "Biomarker, therapeutic target, and therapeutic discovery through integration of molecular, experimental, clinical, and pharmacological evidence.",
+    direction: "Connecting computational discovery with experimental and clinical evidence to advance therapeutic translation."
   },
   links: [
     { label: "Email", url: "mailto:shixuesun.research@gmail.com" },
@@ -24,7 +24,7 @@ const siteData = {
     { label: "Software", target: "infrastructure" }
   ],
   profile:
-    "Shixue Sun is a computational translational scientist with interdisciplinary experience spanning pharmacology, pharmaceutical research, bioinformatics, multi-omics, and clinical informatics. The research integrates molecular, experimental, clinical, pharmacological, and knowledge-based evidence to address translational questions in biomarker discovery, therapeutic target identification, and therapeutic discovery. Bioinformatics, biomedical informatics, machine learning, AI, and related computational approaches are used according to the scientific problem, with an emphasis on scientifically grounded and testable hypotheses.",
+    "I am a computational translational scientist with interdisciplinary experience spanning pharmacology, pharmaceutical research, bioinformatics, multi-omics, and clinical informatics. My research integrates molecular, experimental, clinical, pharmacological, and knowledge-based evidence to address translational questions in biomarker discovery, therapeutic target identification, and therapeutic discovery. My cross-disciplinary background enables me to connect biological context with approaches from bioinformatics, biomedical informatics, machine learning, AI, and related computational methods to generate scientifically grounded and testable hypotheses.",
   pillars: [
     {
       title: "Multimodal Biomedical Data Integration",
@@ -36,7 +36,7 @@ const siteData = {
     },
     {
       title: "Computational Therapeutic Discovery",
-      description: "Connecting disease molecular states with perturbational, pharmacological, screening, and other biomedical evidence to prioritize therapeutic candidates."
+      description: "Integrating disease molecular states with perturbational, pharmacological, screening, and other biomedical evidence to prioritize therapeutic candidates."
     },
     {
       title: "Translational Validation",
@@ -62,11 +62,11 @@ const siteData = {
       subtitle: "Representative work across CLN3, NPC1, IPF, GBM, and DYT1",
       focus: "Integrating molecular, network, and clinical evidence to identify biomarkers, disease mechanisms, and therapeutic targets.",
       outputs: [
-        "CLN3 biomarker discovery",
-        "NPC1 proteomic/clinical integration",
-        "IPF multi-omics",
-        "GBM proteomics",
-        "DYT1 target identification/deconvolution"
+        "CLN3 biomarker discovery — medRxiv preprint",
+        "NPC1 proteomic/clinical integration — manuscript in preparation",
+        "IPF multi-omics — published study",
+        "GBM proteomic response analysis — experimental validation planned",
+        "DYT1 target deconvolution — ongoing"
       ]
     },
     {
@@ -77,14 +77,14 @@ const siteData = {
       outputs: [
         "Gene-expression reversal methodology",
         "Journal of Translational Medicine publication",
-        "Therapeutic prioritization in GBM and IPF",
+        "Therapeutic prioritization in GBM",
         "Reusable computational framework under development"
       ]
     },
     {
       tag: "HTS Discovery",
       title: "HTS-Powered Therapeutic Discovery",
-      subtitle: "Award-supported therapeutic prioritization",
+      subtitle: "HTS-powered computational–experimental therapeutic discovery",
       focus: "Integrating screening response, chemical/biological knowledge, predictive modeling, and experimental validation for therapeutic prioritization.",
       outputs: [
         "NCATS Opportunities Committee Award (PI)",
@@ -97,15 +97,15 @@ const siteData = {
   outputs: [
     {
       label: "Preprint",
-      text: "RD-OMICS bioRxiv preprint for rare-disease data integration and discovery"
+      text: "RD-OMICS bioRxiv preprint"
     },
     {
       label: "Article",
       text: "Reversal Gene Expression Assessment for Drug Repurposing, Journal of Translational Medicine"
     },
     {
-      label: "Portfolio",
-      text: "Biomarker and therapeutic target discovery studies across CLN3, NPC1, IPF, GBM, and DYT1"
+      label: "Preprint",
+      text: "Toward Early Diagnosis and Therapeutic Discovery in CLN3 Disease: A Computational Biomarker Discovery Framework — medRxiv"
     },
     {
       label: "Award",
@@ -115,7 +115,7 @@ const siteData = {
   funding: {
     heading: "NCATS Opportunities Committee Award",
     award: "HTS-Powered Therapeutic Discovery",
-    description: "Developing an adaptive computational-experimental framework integrating HTS, biological knowledge, predictive modeling, and experimental validation for therapeutic discovery."
+    description: "Developing an adaptive computational–experimental framework integrating HTS, biological knowledge, predictive modeling, and experimental validation for therapeutic discovery."
   },
   resources: [
     {
@@ -128,15 +128,15 @@ const siteData = {
     },
     {
       name: "hybrid-isoform-flow",
-      description: "Workflow supporting hybrid isoform analysis."
+      description: "Reproducible workflow for combined long- and short-read RNA-seq analysis."
     },
     {
       name: "htsprep",
-      description: "Development-stage tools for preparing high-throughput screening data."
+      description: "Development-stage tools for HTS data preprocessing and standardization."
     },
     {
       name: "htschem",
-      description: "Development-stage schemas for organizing HTS data."
+      description: "Development-stage tools for compound annotation and chemical-data harmonization."
     }
   ],
   footer:
