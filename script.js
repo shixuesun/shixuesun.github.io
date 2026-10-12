@@ -1,11 +1,11 @@
 const siteData = {
   person: {
-    name: "Shixue Sun, PhD, MS",
+    name: "Shixue Sun, PhD",
     title: "Computational Translational Scientist",
-    subtitle: "Developing computational systems that accelerate therapeutic discovery",
-    affiliationLine: "Computational therapeutics, translational informatics, and reproducible biomedical research",
-    focus: "Biomedical data integration, computational intelligence, and translational validation for therapeutic discovery.",
-    direction: "Building reusable discovery infrastructure that connects open knowledge resources, molecular profiles, and clinical evidence."
+    subtitle: "Integrating Multimodal Biomedical Evidence to Advance Biomarker and Therapeutic Discovery",
+    affiliationLine: "NCATS/NIH",
+    focus: "Cross-disciplinary scientific reasoning across pharmacology, biomedical science, bioinformatics, multi-omics, clinical informatics, and therapeutic discovery.",
+    direction: "Integrating molecular, experimental, clinical, pharmacological, and knowledge-based evidence to develop testable translational hypotheses."
   },
   links: [
     { label: "Email", url: "mailto:shixuesun.research@gmail.com" },
@@ -21,121 +21,126 @@ const siteData = {
     { label: "Portfolio", target: "portfolio" },
     { label: "Outputs", target: "outputs" },
     { label: "Funding", target: "funding" },
-    { label: "Open Science", target: "infrastructure" }
+    { label: "Software", target: "infrastructure" }
   ],
   profile:
-    "Developing reusable computational systems that accelerate therapeutic discovery by integrating biomedical data, computational intelligence, and translational validation. The work connects open knowledge infrastructure, transcriptomic and multi-omic evidence, and clinically grounded evaluation so that discovery workflows can move from data to testable therapeutic hypotheses. Current applications include rare diseases and oncology, while the underlying methods are designed to remain broadly useful across translational research programs. This research program emphasizes reproducible software, interpretable evidence, and practical systems that support collaborative biomedical discovery.",
+    "Shixue Sun is a computational translational scientist with interdisciplinary experience spanning pharmacology, pharmaceutical research, bioinformatics, multi-omics, and clinical informatics. The research integrates molecular, experimental, clinical, pharmacological, and knowledge-based evidence to address translational questions in biomarker discovery, therapeutic target identification, and therapeutic discovery. Bioinformatics, biomedical informatics, machine learning, AI, and related computational approaches are used according to the scientific problem, with an emphasis on scientifically grounded and testable hypotheses.",
   pillars: [
     {
-      title: "Biomedical Data Systems",
-      description: "Integrating heterogeneous biomedical evidence into structured resources for disease and therapeutic research."
+      title: "Multimodal Biomedical Data Integration",
+      description: "Integrating omics, experimental, clinical, pharmacological, and knowledge-based evidence."
     },
     {
-      title: "Computational Discovery Infrastructure",
-      description: "Building reusable platforms and workflows that turn molecular profiles into actionable discovery programs."
+      title: "Biomarker & Therapeutic Target Discovery",
+      description: "Identifying molecular signatures, biomarkers, disease mechanisms, and actionable therapeutic targets."
     },
     {
-      title: "Computational Intelligence",
-      description: "Applying data-driven models to prioritize hypotheses, mechanisms, biomarkers, and candidate interventions."
+      title: "Computational Therapeutic Discovery",
+      description: "Connecting disease molecular states with perturbational, pharmacological, screening, and other biomedical evidence to prioritize therapeutic candidates."
     },
     {
       title: "Translational Validation",
-      description: "Connecting computational predictions with experimental systems and clinical evidence."
+      description: "Connecting computational hypotheses with experimental and clinical evidence."
     }
   ],
   portfolio: [
     {
-      tag: "Knowledge Infrastructure",
-      title: "RD-OMICS",
-      subtitle: "Biomedical knowledge infrastructure for rare disease research",
-      focus: "A data resource for organizing rare disease omics evidence and enabling systematic computational discovery.",
+      tag: "Rare Disease",
+      title: "Rare-Disease Data Integration & Discovery",
+      subtitle: "Representative work: RD-OMICS",
+      focus: "Integrating fragmented multi-omics evidence to enable systematic rare-disease research and therapeutic discovery.",
       outputs: [
-        "RD-OMICS (bioRxiv)",
-        "Structured disease, gene, and omics evidence resource",
-        "Framework for rare disease knowledge integration"
+        "Knowledge graph integrating >11,000 GEO series across 126 rare diseases",
+        "LLM-assisted metadata harmonization",
+        "Co-corresponding-author bioRxiv preprint",
+        "Manuscript under review at NAR Molecular Medicine"
       ]
     },
     {
-      tag: "Drug Repurposing",
-      title: "Transcriptome-based therapeutic discovery platform",
-      subtitle: "Developing reusable computational platforms for transcriptome-based therapeutic prioritization.",
-      focus: "A computational platform for identifying therapeutic candidates through reversal of disease-associated gene expression signatures.",
+      tag: "Biomarkers & Targets",
+      title: "Biomarker & Therapeutic Target Discovery",
+      subtitle: "Representative work across CLN3, NPC1, IPF, GBM, and DYT1",
+      focus: "Integrating molecular, network, and clinical evidence to identify biomarkers, disease mechanisms, and therapeutic targets.",
       outputs: [
-        "Reversal Gene Expression Assessment (JTM)",
-        "Reusable drug repurposing platform (in development)",
-        "Multiple public perturbation resources"
+        "CLN3 biomarker discovery",
+        "NPC1 proteomic/clinical integration",
+        "IPF multi-omics",
+        "GBM proteomics",
+        "DYT1 target identification/deconvolution"
       ]
     },
     {
-      tag: "Closed-Loop Discovery",
-      title: "Adaptive HTS-powered Therapeutic Discovery System",
-      subtitle: "Closed-loop computational-experimental therapeutic discovery",
-      focus: "An adaptive system linking computational prioritization with high-throughput screening to refine therapeutic discovery cycles.",
+      tag: "Therapeutic Discovery",
+      title: "Computational Therapeutic Discovery",
+      subtitle: "Gene-expression reversal and molecular-state prioritization",
+      focus: "Connecting disease molecular states with perturbational and pharmacological evidence to prioritize therapeutic candidates.",
       outputs: [
-        "HTS-powered drug repurposing ecosystem (in development)",
-        "Computational triage for experimental screening",
-        "Infrastructure for iterative discovery workflows"
+        "Gene-expression reversal methodology",
+        "Journal of Translational Medicine publication",
+        "Therapeutic prioritization in GBM and IPF",
+        "Reusable computational framework under development"
       ]
     },
     {
-      tag: "Clinical Evidence",
-      title: "Clinical Evidence Integration",
-      subtitle: "Translational validation using clinical data",
-      focus: "A translational evidence layer for evaluating computational hypotheses against clinical datasets and patient-centered measurements.",
+      tag: "HTS Discovery",
+      title: "HTS-Powered Therapeutic Discovery",
+      subtitle: "Award-supported therapeutic prioritization",
+      focus: "Integrating screening response, chemical/biological knowledge, predictive modeling, and experimental validation for therapeutic prioritization.",
       outputs: [
-        "Clinical data-driven validation workflows",
-        "Clinical evidence integration for therapeutic hypotheses",
-        "Frameworks for biomarker and outcome interpretation"
+        "NCATS Opportunities Committee Award (PI)",
+        "Therapeutic Effect Pattern modeling",
+        "Single-agent and combination prioritization",
+        "Experimental validation planned"
       ]
     }
   ],
   outputs: [
     {
       label: "Preprint",
-      text: "RD-OMICS bioRxiv"
+      text: "RD-OMICS bioRxiv preprint for rare-disease data integration and discovery"
     },
     {
       label: "Article",
       text: "Reversal Gene Expression Assessment for Drug Repurposing, Journal of Translational Medicine"
     },
     {
-      label: "Framework",
-      text: "CLN3 biomarker discovery framework"
+      label: "Portfolio",
+      text: "Biomarker and therapeutic target discovery studies across CLN3, NPC1, IPF, GBM, and DYT1"
     },
     {
-      label: "Omics",
-      text: "Integrative omics analysis in idiopathic pulmonary fibrosis"
+      label: "Award",
+      text: "NCATS Opportunities Committee Award supporting HTS-powered therapeutic discovery"
     }
   ],
   funding: {
     heading: "NCATS Opportunities Committee Award",
-    award: "HTS-powered Drug Repurposing Ecosystem Development",
-    description: "Developing an integrated computational and experimental ecosystem for high-throughput therapeutic repurposing."
+    award: "HTS-Powered Therapeutic Discovery",
+    description: "Developing an adaptive computational-experimental framework integrating HTS, biological knowledge, predictive modeling, and experimental validation for therapeutic discovery."
   },
   resources: [
     {
       name: "RD-OMICS",
-      description: "Rare disease omics knowledge infrastructure."
+      description: "Rare-disease omics resource and knowledge graph supporting data integration and discovery."
     },
     {
       name: "RePURR",
-      description: "Transcriptome-based drug repurposing platform."
+      description: "Transcriptome-based therapeutic prioritization framework under development."
     },
     {
       name: "hybrid-isoform-flow",
-      description: "Workflow for hybrid isoform analysis."
+      description: "Workflow supporting hybrid isoform analysis."
     },
     {
       name: "htsprep",
-      description: "Preparation tools for high-throughput screening data."
+      description: "Development-stage tools for preparing high-throughput screening data."
     },
     {
       name: "htschem",
-      description: "Schemas for HTS data organization."
+      description: "Development-stage schemas for organizing HTS data."
     }
   ],
   footer:
-    "Open to collaboration in computational therapeutics, translational informatics, and reproducible biomedical research."
+    "Open to collaboration in biomarker discovery, therapeutic target identification, therapeutic discovery, and translational evidence integration."
 };
 
 const select = (selector) => document.querySelector(selector);
